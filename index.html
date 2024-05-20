@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c1446bc3a3.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+        referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+
+    <div id="header">
+
+        <div class="container">
+            <nav>
+                <div class="logo">S<span id="logo2">hreya</span> </div>
+                <ul id="sidemenu">
+                    <li> <a href="#header">Home</a> </li>
+                    <li> <a href="#about">About</a> </li>
+                    <li> <a href="#services">Services</a> </li>
+                    <li> <a href="#portfolio">Portfolio</a> </li>
+                    <li> <a href="#contact">Contact</a> </li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h3>
+
+                    <span class="typing"></span>
+                </h3>
+                <h1>Hey, I'm <span>Shreya Kumari </span> <br> from India.</h1>
+                <p id="intro">Computer Science and <br> Engineering student at Bhagalpur College of
+                    Engineering</p>
+            </div>
+            <a href="#about" class="btn">More about me...</a>
+        </div>
+
+    </div>
+    <!-- about  -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/background.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me </h1>
+                    <p>I am Shreya Kumari, the front-end developer. My technical skills include
+                        HTML, CSS, Javascript, C++, C and GitHub.My
+                        soft
+                        skills include Problem Solving,Time Management,Creative Thinking, Teamwork,
+                        Adaptability, Leadership quality, Decision Making and
+                        Communication skills.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+
+                        <ul>
+                            <li><span>Web Development</span><br>Javascript <br> HTML, CSS</li>
+                            <li><span>CPP</span><br>Solved 150+ Questions</li>
+                            <div class="social-icons" id="i-2">
+                                <a
+                                    href="https://www.hackerrank.com/profile/Shreya_Kumari_52"><i
+                                        class="fa-brands fa-hackerrank"></i></a>
+                            
+        
+                                <a
+                                    href="https://www.geeksforgeeks.org/user/shreyakmri9/"><i
+                                        class="fa-solid fa-g"></i></a>
+                            </div>
+                            <li><span>Designing</span><br>Designed Poster using Canva</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Web Developer intern - Readycoder</span><br>Worked on HTML,CSS and Javascript<br>Developed
+                                responsive
+                                website <br> Worked on editing, writing and designing of the website
+                                contents.
+                            </li>
+
+                        </ul>
+                        <ul>
+                            <li><span>Salesforce Developer Internship - Salesforce</span><br>Worked on Salesforce Fundamentals<br>
+                            </li>
+
+                        </ul>
+                        <ul>
+                            <li>
+                                <span> 5🌟 at HackeRank<a href="https://www.hackerrank.com/profile/Shreya_Kumari_52"><i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i></a></span>
+                            </li>
+                        </ul>
+
+                        <ul>
+                            <li><span>Certification in C++ from Cisco <a
+                                        href="https://www.linkedin.com/posts/shreya-kumari-0849a720a_cisconetworkingacademy-activity-6926751628037357568-mZ8V?utm_source=share&utm_medium=member_android">
+                                        <i class="fa-regular fa-file"></i>
+                                    </a></span></li>
+                        </ul>
+                        <ul>
+                            <li><span>Certification in C from Cisco
+                                    <a
+                                        href="https://www.linkedin.com/posts/shreya-kumari-0849a720a_thanks-cisco-for-this-amazing-course-activity-6827513361631129600-NUOW?utm_source=share&utm_medium=member_android">
+                                        <i class="fa-regular fa-file"></i> </a></span></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-24</span><br>Bhagalpur College of Engineering,Bhagalpur</li>
+                            <li><span>2020</span><br>12th from CBSE - 93.2%</li>
+                            <li><span>2018</span><br>10th from CBSE - 95.8%</li>
+                        
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- services  -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services </h1>
+            <div class="services-list">
+                <div>
+
+
+                    <!-- <i class="fa-solid fa-tablet-screen-button"></i> -->
+                    <i class="fa-solid fa-w"></i>
+                    <h2>Web Developer</h2>
+                    <p class="font">I have a passion for creating websites, having designed several using HTML, CSS and JavaScript. Each project has been an opportunity to bring ideas to life, from crafting visually appealing layouts to implementing interactive features that enhance user experience. I am particularly interested in collaborating on diverse projects, including business, educational, e-commerce, portfolio, and news websites.</p>
+                    <a href="#contact">Contact Me</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Competitive Programming</h2>
+                    <p class="font">With a solid foundation in coding, I have honed my skills on various competitive programming platforms such as GeeksforGeeks and HackerRank. These platforms have provided me with a diverse array of challenges that have sharpened my problem-solving abilities and allowed me to apply theoretical knowledge to practical scenarios. By tackling algorithmic problems and engaging in coding competitions, I have developed a deep understanding of data structures, algorithms, and optimization techniques.</p>
+                    <a href="#contact">Contact Me</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen"></i>
+                    <h2> Designing</h2>
+                    <p class="font">I excel at creating a wide range of posters, including advertisements, motivational, informative, event and research posters. My strong creative abilities enable me to design visually appealing and impactful graphics that effectively communicate the intended message. </p>
+                    <a href="#contact">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/work-1.jpg">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>Using HTML,CSS & Javascript. <br>Checks weather of any city</p>
+                        <a href="https://shreya-kmri.github.io/Weather-App/"> <i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/work-2.webp" id="layer2">
+
+                    <div class="layer" id="layer3">
+                        <h3>Food Delivery Website</h3>
+                        <p>A responsive website using HTML & CSS. <br>
+                            The Website will automatically behave responsively according to different screen
+                            sizes.</p>
+                        <a href="https://shreya-kmri.github.io/Food-Delivery-Website/"> <i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                    </div>
+                </div>
+                
+            </div>
+            <!-- <a href="#" class="btn">See more</a> -->
+        </div>
+    </div>
+
+
+    <!-- contact  -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <!-- <p><i class="fa-solid fa-paper-plane"></i>priyaayushi258@gmail.com</p> -->
+                    <!-- <p><a href="mailto:shreyakmri9@gmail.com"><i class="fa-solid fa-paper-plane"></i></a>shreyakmri9@gmail.com -->
+                    </p>
+
+                    <!-- <p><i class="fa-solid fa-square-phone"></i>7461006029</p> -->
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/shreya-kumari-0849a720a"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/shreya_jha_196"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/Shreya-Kmri"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="mailto:shreyakmri9@gmail.com"><i class="fa-solid fa-paper-plane"></i></a>
+                    </div>
+                    <a href="image/Shreya_Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var typed = new Typed(".typing", {
+            strings: [" Frontend Developer", "Competitive Programmer", "Designer"],
+            typeSpeed: 100,
+            backSpeed: 60,
+            loop: true
+        });
+    </script>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+
+            event.currentTarget.classList.add("active-link");
+
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = 0;
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwRlcHFCGH9pU96PLWFW3TvautEsS-LGxyZD9YB5YYElihrvli4R6SvbmTPcf19ceEW/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
